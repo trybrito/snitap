@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
+  -mos-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* Brand Colors */
+  --sun: #ffcd1e;
+  --sky-mid: #06b6d4;
+  --sky-light: #67e8f9;
+  --joy-mid: #db2777;
+  --joy-light: #f472b6;
+  --leaf-mid: #16a34a;
+
+  /* Base Colors */
+  --text: #000;
+  --highlights: #000;
+  --background: #fafafa;
+
+  /* Fonts */
+  --ff-montserrat: "Montserrat", system-ui, sans-serif;
+  --ff-syne: "Syne", system-ui, sans-serif;
+  --ff-inter: "Inter", system-ui, sans-serif;
+
+  --fw-medium: 600;
+  --fw-bold: 700;
+
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 2.5rem;
+  --fs-xl: 4rem;
+}
+
+html,
+button {
+  font: var(--fw-medium) var(--fs-base) / 150% var(--ff-montserrat);
+}
+
+h1,
+h2 {
+  font: var(--fw-bold) var(--ff-syne);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  line-height: 125%;
+}
+
+h2 {
+  font-size: var(--fs-lg);
+  line-height: 120%;
+}
+
+span {
+  font-size: var(--fs-sm);
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  border: 0;
+}
