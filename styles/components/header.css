@@ -1,0 +1,43 @@
+header {
+  padding-block: 1.25rem;
+  margin-inline: auto;
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+      position: relative;
+
+      & img {
+        width: 2rem;
+        height: 2rem;
+        transition: transform 500ms;
+      }
+
+      & img[src*="logo"]:hover {
+        transform: rotate(90deg);
+      }
+
+      & img[src*="shopping"]:hover {
+        transform: rotate(-20deg);
+      }
+
+      & span {
+        position: absolute;
+        right: -0.5rem;
+        top: -0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 1.25rem;
+        height: 1.25rem;
+        font: var(--fw-medium) 0.75rem/130% var(--ff-inter);
+        background-color: var(--sun);
+        border-radius: 50%;
+      }
+    }
+  }
+}
